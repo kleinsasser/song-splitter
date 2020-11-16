@@ -15,6 +15,8 @@ The model is a convolutional neural network based on the u-net architecture as e
 
 I built this model using a tf.keras.Model, which has all of the benefits of a keras Sequential model (built-in losses, optimizers, and training loops) while allowing for the non-sequential skip connections present in the u-net architecture. I trained the model on my Macbook Pro, which has a 3.5 GHz Dual-Core Intel i7 processor and 16GB RAM for 30 epochs, training took ~1.5 hours. For reference, the final MAE settled around (training: 0.1, validation: 0.115, testing: 0.125), but given the subjective nature of the task results are best measured with ears.
 
+(See [model_graph.png](model_graph.png) for the model graph, too long to include here)
+
 ## Signal Reconstruction
 The model is trained exclusively on magnitude spectrogram data, reconstructing a signal from a stft requires both the magnitude information and the phase information. Given the predicted magnitude spectrogram M and the phase information matrix of the input P, the final signal is reconstructed using librosa.istft(M * P). Using the phase information from the input to construct the output seems to work fairly well qualitatively.
 
