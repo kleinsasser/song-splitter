@@ -46,6 +46,9 @@ Example 1:
 ### References
 
 Paper this project was a reproduction of: [https://arxiv.org/pdf/1903.01415.pdf](https://arxiv.org/pdf/1903.01415.pdf)
+
 musdb18hq Dataset: [https://sigsep.github.io/datasets/musdb.html](https://sigsep.github.io/datasets/musdb.html)
+
 librosa Python Audio Processing Library: [https://librosa.org](https://librosa.org)
+
 TensorFlow home page: [https://www.tensorflow.org](https://www.tensorflow.org)
