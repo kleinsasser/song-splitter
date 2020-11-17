@@ -1,5 +1,8 @@
 # Vocal Isolation from Music Using Fourier Transforms and Deep Convolutional Neural Networks in Tensorflow
+#### (Scroll to bottom to skip to results)
 Max Kleinsasser
+
+![alt text](/examples/116/specs.png)
 
 ## Summary
 This repository contains a convolutional u-net model based on [this paper](https://arxiv.org/pdf/1903.01415.pdf) from 2017. The model takes the magnitude spectrograms of songs containing a mixture of vocals and accompaniment and returns a spectrogram of the same song stripped of its accompaniment, leaving only the vocals. I built this model as part of a larger personal project of mine and want to share my experience to perhaps aid others in their own implementation.
@@ -22,5 +25,27 @@ The model is trained exclusively on magnitude spectrogram data, reconstructing a
 
 ## Some Results
 
-Some examples of the model's performance:
+Some examples of the model's performance, ordered by my preference toward each (note: the audio is downsampled to 8192Hz for processing speed and reconstructed from a spectrogram, so the audio quality is quite horrible, I will be making a higher-quality-audio rendition of this model in the future):
 
+Example 4:
+![alt text](/examples/124/spec.png)
+[Link to Audio Files](https://soundcloud.com/mklein12/sets/example-4)
+
+Example 2:
+![alt text](/examples/118/specs.png)
+[Link to Audio Files](https://soundcloud.com/mklein12/sets/example-2)
+
+Example 3:
+![alt text](/examples/121/specs.png)
+[Link to Audio Files](https://soundcloud.com/mklein12/sets/example-3)
+
+Example 1:
+![alt text](/examples/116/specs.png)
+[Link to Audio Files](https://soundcloud.com/mklein12/sets/example-1)
+
+### References
+
+Paper this project was a reproduction of: [https://arxiv.org/pdf/1903.01415.pdf](https://arxiv.org/pdf/1903.01415.pdf)
+musdb18hq Dataset: [https://sigsep.github.io/datasets/musdb.html](https://sigsep.github.io/datasets/musdb.html)
+librosa Python Audio Processing Library: [https://librosa.org](https://librosa.org)
+TensorFlow home page: [https://www.tensorflow.org](https://www.tensorflow.org)
