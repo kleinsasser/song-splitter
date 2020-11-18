@@ -5,7 +5,7 @@ Max Kleinsasser
 ![alt text](/examples/116/specs.png)
 
 ## Summary
-This repository contains a convolutional u-net model based on [this paper](https://ejhumphrey.com/assets/pdf/jansson2017singing.pdf) from 2017. The model takes the magnitude spectrograms of songs containing a mixture of vocals and accompaniment and returns a spectrogram of the same song stripped of its accompaniment, leaving only the vocals. I built this model as part of a larger personal project of mine and want to share my experience to perhaps aid others in their own implementation.
+This repository contains a convolutional u-net model based on [this paper](https://ejhumphrey.com/assets/pdf/jansson2017singing.pdf) from Spotify and the University of London in 2017. The model takes the magnitude spectrograms of songs containing a mixture of vocals and accompaniment and returns a spectrogram of the same song stripped of its accompaniment, leaving only the vocals. I built this model as part of a larger personal project of mine and want to share my experience to perhaps aid others in their own implementation.
 
 ## Dataset
 The data this model was trained on is from the [musdb18hq dataset](https://sigsep.github.io/datasets/musdb.html). The paper whose methodology is used in this project uses a separate dataset from files (about 20,000 song stems) mined from the commercial sources. I was able to acheive acceptable results from the 100 song stems from musdb. Use the link to request access to the dataset.
